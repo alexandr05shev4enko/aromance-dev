@@ -2,6 +2,7 @@ body{
   font-size: 16px;
   line-height: 28px;
   color: #666666;
+  @extend %arial-400;
 }
 
 .container--big{
