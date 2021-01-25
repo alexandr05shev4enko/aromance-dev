@@ -14,3 +14,26 @@ body{
   width: 996px;
   margin: 0 auto;
 }
+
+.title{
+  font-size: 48px;
+  text-align: center;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: $title-color;
+}
+
+.button{
+  padding: 14px 30px;
+  background: linear-gradient(255.87deg, #FC323C24.88%, #9E1419 79.86%);
+  border-radius: 60px;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+  width: 155px;
+  display: inline-block;
+  margin-top: 55px;
+  &:hover{
+    background: #FD383E;
+  }
+}

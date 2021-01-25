@@ -29,11 +29,11 @@
 }
 
 @font-face{
-  font-family: 'Arial';
+  font-family: 'Arial-Bold';
   font-weight: 700;
   font-style: normal;
-  src: local('Arial'),
-      url('../fonts/arial.woff2') format('woff2'),
-      url('../fonts/arial.woff') format('woff');
+  src: local('Arial-Bold'),
+      url('../fonts/arial-bold.woff2') format('woff2'),
+      url('../fonts/arial-bold.woff') format('woff');
   font-display: swap;
 }

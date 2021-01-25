@@ -1,5 +1,6 @@
 $accent-color: #FD383E;
 $title-color:  #333333;
+$grey: #666;
 
 
 
@@ -10,7 +11,7 @@ $title-color:  #333333;
 }
 
 %roboto-700{
-  font-family: 'Roboto-Regular', sans-serif;
+  font-family: 'Roboto-Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -20,7 +21,7 @@ $title-color:  #333333;
 }
 
 %arial-700{
-  font-family: 'Arial', sans-serif;
+  font-family: 'Arial-Bold', sans-serif;
   font-weight: 700;
 }
 

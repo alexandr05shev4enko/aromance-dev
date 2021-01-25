@@ -1,6 +1,13 @@
 $(function(){
 
-  
+  $(".reviews__items").slick({
+    vertical: true,
+    arrows: true,
+    dots: true,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    autoplay: true
+  });
 
   $(".featured__slider-items").slick({
     arrows: true,
@@ -10,6 +17,8 @@ $(function(){
     dots: true,
     swipe: false
   });
+  
+
 
   $("[data-fancybox]").fancybox({
     smallBtn:true
