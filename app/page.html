@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-top">
+      <div class="container--big">
+        <!--1200px -->
+        <div class="header-top__menu">
+          <div class="header-top__logo">
+            <img class="header-top__logo" src="images/main/header/logo.png" alt="Логотип">
+          </div>
+          <nav class="header-top__nav-menu">
+            <ul class="header-top__nav-items">
+              <li class="header-top__nav-item">
+                <a class="header-top__nav-link" href="#">Главная</a>
+              </li>
+              <li class="header-top__nav-item">
+                <a class="header-top__nav-link" href="#">О нас</a>
+              </li>
+              <li class="header-top__nav-item">
+                <a class="header-top__nav-link" href="#">Магазин</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-top__menu-icons">
+            <a class="header-top__menu-icon search-icon" href="javascript:;">
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8 16C9.77498 15.9996 11.4988 15.4054 12.897 14.312L17.293 18.708L18.707 17.294L14.311 12.898C15.405 11.4997 15.9996 9.77544 16 8C16 3.589 12.411 0 8 0C3.589 0 0 3.589 0 8C0 12.411 3.589 16 8 16ZM8 2C11.309 2 14 4.691 14 8C14 11.309 11.309 14 8 14C4.691 14 2 11.309 2 8C2 4.691 4.691 2 8 2Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <a class="header-top__menu-icon" data-fancybox data-src="#hidden-content" href="javascript:;">
+              <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.5 0C6.58983 0 4.22222 2.36105 4.22222 5.26316C4.22222 8.16526 6.58983 10.5263 9.5 10.5263C12.4102 10.5263 14.7778 8.16526 14.7778 5.26316C14.7778 2.36105 12.4102 0 9.5 0ZM9.5 8.42105C7.75411 8.42105 6.33333 7.00421 6.33333 5.26316C6.33333 3.52211 7.75411 2.10526 9.5 2.10526C11.2459 2.10526 12.6667 3.52211 12.6667 5.26316C12.6667 7.00421 11.2459 8.42105 9.5 8.42105ZM19 20V18.9474C19 14.8853 15.6845 11.5789 11.6111 11.5789H7.38889C3.31444 11.5789 0 14.8853 0 18.9474V20H2.11111V18.9474C2.11111 16.0453 4.47872 13.6842 7.38889 13.6842H11.6111C14.5213 13.6842 16.8889 16.0453 16.8889 18.9474V20H19Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <a class="header-top__menu-icon header-top__bag-icon" data-fancybox data-src="#search-hidden"
+              href="javascript:;">
+              <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.40909 5.15385C4.40909 5.15385 4.40909 1 8.5 1C12.5909 1 12.5909 5.15385 12.5909 5.15385M1 5.15385V19H16V5.15385H1Z"
+                  stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+
+
+
+    <div style="display: none;" id="hidden-content">
+      <div class="header-modal">
+        <form class="header-modal__form" action="#">
+          <h3 class="header-modal__title">
+            Авторизация
+          </h3>
+          <input class="header-modal__email" type="email" placeholder="Ваш e-mail">
+          <input class="header-modal__password" type="password" placeholder="Ваш пароль">
+          <div class="header-modal__link-wrapper">
+            <a class="header-modal__link" href="#">
+              Забыли пароль?
+            </a>
+          </div>
+          <div class="header-modal__signin-wrapper">
+            <a class="header-modal__signin-btn button" href="#">
+              Войти
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- <div style="display: none;" id="search-hidden"> -->
+    <div class="search-modal">
+      <div class="search-modal__line">
+        <form class="search-modal__form" action="#">
+          <input class="search-modal__input" type="text" placeholder="Поиск...">
+          <input class="search-modal__btn" type="submit" value="">
+        </form>
+        <div class="search-modal__cross"></div>
+      </div>
+    </div>
+    <!-- </div> -->
+  </header>
+
+
+
+  <footer class="footer">
+    <div class="container--big">
+      <div class="footer-top">
+        <div class="footer-top__item">
+          <p class="footer-top__item-title">Меню</p>
+          <ul class="footer-top__item-list">
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Главная</a> 
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">О нас</a> 
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Магазин</a> 
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item">
+          <p class="footer-top__item-title">О нас</p>
+          <ul class="footer-top__item-list">
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Доставка</a> 
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Оптовые продажи</a> 
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">Сотрудничество</a>  
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item footer-top__form">
+          <p class="footer-top__item-title">Подпишитесь на рассылку новостей</p>
+          <p class="footer-top__item-subtitle">Узнавайте первым о новых поступлениях</p>
+          <form  class="footer-top__item-form" action="#">
+            <input class="footer-top__item-input" type="email"  placeholder="E-mail адресс">
+            <input class="footer-top__item-btn button" type="submit" placeholder="Отправить">
+          </form>
+        </div>
+        <div class="footer-top__item">
+          <a class="footer-top__email" href="mailTo:support@aromence.com" >support@aromence.com</a>
+          <a class="footer-top__phone" href="tel:8452088639">845-208-8639</a>
+          <span class="footer-top__span">
+            © 2021, aromence
+          </span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="header-top__logo">
+          <img class="header-top__logo" src="images/main/footer/logo.png" alt="Логотип">
+        </div>
+        <div class="footer-bottom__text">
+          <a href="#">User agreement</a>
+          <a href="#">Privacy policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
