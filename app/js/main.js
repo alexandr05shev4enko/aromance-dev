@@ -17,6 +17,8 @@ $(function(){
     dots: true,
     swipe: false
   });
+
+  $('.select-style').styler();
   
 
 
