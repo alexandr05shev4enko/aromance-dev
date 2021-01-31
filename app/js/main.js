@@ -58,6 +58,16 @@ $(function(){
     $(".bag-modal").removeClass("bag-modal--active");
   });
 
+  $(".header-top__btn").on('click', function(){
+    $(".header-top__btn").addClass("header-top__btn--active");
+    $(".mobile").addClass("mobile--active");
+  });
+
+  $(".mobile__btn").on('click', function(){
+    $(".header-top__btn").removeClass("header-top__btn--active");
+    $(".mobile").removeClass("mobile--active");
+  })
+
   // var currentSlide = $('.featured__slider-items').slick('slickCurrentSlide');
 
   // if(currentSlide){

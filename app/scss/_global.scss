@@ -6,12 +6,13 @@ body{
 }
 
 .container--big{
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0px 10px;
 }
 
 .container--small{
-  width: 996px;
+  max-width: 996px;
   margin: 0 auto;
 }
 
