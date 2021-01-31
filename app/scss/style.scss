@@ -126,6 +126,14 @@
   margin: 0 !important;
 }
 
+
+
+.header-top__bag-icon--active{
+  background-color: #fff;
+}
+
+
+
 .header-modal{
   height: 500px;
   width: 575px;
@@ -330,6 +338,7 @@
   &__slider-title{
     font-size: 30px;
     line-height: 48px;
+    color: $grey;
   }
   &__slider-price{
     font-size: 30px;
@@ -358,7 +367,7 @@
   background-size: 13px 7px;
   background-position: center center;
   cursor: pointer;
-  z-index: 999;
+  z-index: 900;
 }
 
 .slick-next{
@@ -664,10 +673,12 @@ ul.slick-dots{
   }
   &__input{
     height: 60px;
+    border-radius: 5px;
   }
   &__textarea{
     height: 240px;
     resize: none;
+    border-radius: 5px;
   }
   &__btn{
     padding: 8px 30px;
@@ -691,6 +702,9 @@ ul.slick-dots{
     height: unset;
     background-image: unset;
     color: $title-color;
+    & .bag-modal--active{
+      color: #fff;
+    }
   }
   & + .footer{
     padding-top: 50px;
@@ -933,6 +947,173 @@ ul.slick-dots{
   // }
 }
 
+
+.bag-modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(228.72deg, #FC323C 9.09%, #AC3238 89.14%), #FC2F3A;
+  transition: all .5s;
+  margin: 0 !important;
+  height: 100vh;
+  padding: 0;
+  z-index: 999;
+}
+.bag-modal--active{
+  display: block;
+  transition: all .5s;
+  .bag-modal__bag-icon{
+    background-color: #fff;
+    border-radius: 50%;
+    path{
+      fill: none;
+      stroke: $accent-color;
+    }
+  }
+  & .header-top{
+    &__nav-link{
+      color: #fff;
+    }
+    &__logo{
+      width: 148px;
+      height: 45px;
+    }
+  }
+  & .bag{
+    &__title{
+      color: #fff;
+      text-align: left;
+      margin-top: 108px;
+    }
+    &__items{
+      margin-top: 50px;
+      font-size: 21px;
+      line-height: 32px;
+    }
+    &__top{
+      display: flex;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #BBD8E1;
+    }
+    &__top-name{ 
+      width: 620px;
+    }
+    &__top-price{
+      margin-left: 5px;
+    }
+    &__top-quantity{
+      margin-left: 35px;
+    }
+    &__top-total{
+      margin-left: 50px;
+    }
+    &__item{
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #BBD8E1;
+      padding-bottom: 45px;
+      padding-top: 45px;
+    }
+    &__item-img{
+      width: 140px;
+      height: 140px;
+      object-fit: contain;
+      margin-right: 40px;
+    }
+    &__item-text{
+      width: 330px;
+      margin-right: 115px;
+    }
+    &__item-name{
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+    &__item-scent{
+      font-size: 18px;
+    }
+    &__item-price{
+      margin-right: 70px;
+    }
+    &__item-quantity{
+      margin-right: 105px;
+    }
+    &__item-total{
+      margin-right: 170px;
+    }
+    &__item-remove{
+      background-color: transparent;
+      border: none;
+      text-decoration: underline;
+      color: #fff;
+    }
+    &__bottom{
+      margin-top: 70px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 21px;
+      line-height: 32px;
+      text-transform: uppercase;
+      align-items: center;
+    }
+    &__check-out{
+      color: $accent-color;
+      padding: 10px 50px;
+      background-color: #fff;
+      border-radius: 60px;
+    }
+  }
+  //   &__table{
+  //     margin-top: 50px;
+  //     width: 100%;
+  //     font-size: 21px;
+  //     line-height: 32px;
+  //     // border-bottom: 1px solid #BBD8E1;
+  //   }
+  //   &__top td{
+  //     padding: 20px;
+  //     border-bottom: 1px solid #BBD8E1;
+  //   }
+  //   &__item td{
+  //     border-bottom: 1px solid #BBD8E1;
+  //     padding: 20px;
+  //   }
+  //   &__item{
+  //     padding-right: 50px;
+  //   }
+  //   &__item-name{
+  //     max-width: 590px;
+  //   }
+  //   &__item-img{
+  //     width: 140px;
+  //     height: 140px;
+  //     object-fit: contain;
+  //     display: inline-block;
+  //     margin-right: 40px;
+  //   }
+  //   &__item-descr{
+  //     display: inline-block;
+  //     transform: translateY(-35px);
+  //   }
+  //   &__item-text{
+  //     text-transform: uppercase;
+  //     margin-bottom: 15px;
+  //     max-width: 330px;
+  //   }
+  //   &__scent{
+  //     font-size: 18px;
+  //     line-height: 32px;
+  //   }
+  //   &__remove-btn{
+  //     position: absolute;
+  //     right: 0;
+      
+  //   }
+  // }
+}
 
 
 

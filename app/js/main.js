@@ -50,6 +50,14 @@ $(function(){
     $(".search-modal").removeClass("search-modal--active")
   });
 
+  $(".header-top__bag-icon").on("click", function(){
+    $(".bag-modal").addClass("bag-modal--active");
+  });
+
+  $(".bag-modal__bag-icon").on("click", function(){
+    $(".bag-modal").removeClass("bag-modal--active");
+  });
+
   // var currentSlide = $('.featured__slider-items').slick('slickCurrentSlide');
 
   // if(currentSlide){
