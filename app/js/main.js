@@ -31,10 +31,16 @@ $(function(){
     slidesToShow: 1,
     // centerMode: true,
     dots: true,
-    swipe: false
+    swipe: false,
+    responsive: [
+      {
+      breakpoint: 670,
+      settings: "unslick"
+      }
+    ]
   });
 
-  $('.select-style, .product-descr__select').styler();
+  $('.select-style, .product-descr__select, .footer-mobile__menu-list').styler();
   
 
 
