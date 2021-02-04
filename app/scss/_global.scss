@@ -3,6 +3,10 @@ body{
   line-height: 28px;
   color: #666666;
   @extend %arial-400;
+  &.bag-modal--active{
+    overflow: hidden;
+    position: fixed;
+  }
 }
 
 .container--big{

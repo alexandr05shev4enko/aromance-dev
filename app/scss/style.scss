@@ -72,6 +72,7 @@
     background-color: #fff;
     display: none;
     cursor: pointer;
+    // z-index: 999;
   }
   &__btn-inner{
     position: relative;
@@ -241,8 +242,8 @@
 
 .fancybox-close-small{
   position: absolute;
-  right: 50px;
-  top: 100px;
+  // right: 50px;
+  // top: 100px;
   border: none;
   height: 19px;
   width: 19px;
@@ -266,6 +267,7 @@
 
 .search-modal{
   background-color: #585858;
+  border-radius: 5px;
   width: 920px;
   height: 165px;
   padding: 55px 138px 55px 71px;
@@ -659,6 +661,9 @@ ul.slick-dots{
   &__descr{
     margin-bottom: 0;
   }
+  &__bottom{
+    padding: 0 10px;
+  }
 }
 
 .form{
@@ -687,6 +692,9 @@ ul.slick-dots{
     height: 508px;
     object-fit: contain;
     max-width: unset;
+    &--mobile{
+      display: none;
+    }
   }
   &__right-form .form__input,
   &__right-form .form__textarea{
@@ -831,6 +839,7 @@ ul.slick-dots{
   &__items{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   &__item{
     width: 285px;
@@ -844,6 +853,10 @@ ul.slick-dots{
     justify-content: flex-start;
     font-size: 21px;
     line-height: 30px;
+    margin-bottom: 10px;
+    // & + .products__item{
+    //   margin: auto;
+    // }
   }
   &__item-img{
     height: 180px;
@@ -891,13 +904,11 @@ ul.slick-dots{
 //   padding: 0 !important;
 // }
 
-// .product-slider{
-//   position: absolute;
-//   right: 0;
-//   top: 0;
-//   left: auto;
-//   z-index: 10;
-// }
+.product-slider{
+  &--mobile{
+    display: none;
+  }
+}
 
 .product__inner{
   display: flex;
@@ -994,11 +1005,13 @@ ul.slick-dots{
   margin: 0 !important;
   height: 100vh;
   padding: 0;
-  z-index: 999;
+  z-index: 990;
+  overflow: scroll;
 }
 .bag-modal--active{
   display: block;
   transition: all .5s;
+  padding: 0 5px;
   .bag-modal__bag-icon{
     background-color: #fff;
     border-radius: 50%;
@@ -1017,10 +1030,37 @@ ul.slick-dots{
     }
   }
   & .bag{
+    &__inner{
+      position: relative;
+    }
+    &__close{
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: -45px;
+      right: 15px;
+      cursor: pointer;
+      display: none;
+      &::before,
+      &::after{
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 2px;
+        top: 12px;
+        background-color: #fff;
+      }
+      &::before{
+        transform: rotate(45deg);
+      }
+      &::after{
+        transform: rotate(-45deg);
+      }
+    }
     &__title{
       color: #fff;
       text-align: left;
-      margin-top: 108px;
+      // margin-top: 108px;
     }
     &__items{
       margin-top: 50px;
@@ -1092,6 +1132,7 @@ ul.slick-dots{
       line-height: 32px;
       text-transform: uppercase;
       align-items: center;
+      margin-bottom: 80px;
     }
     &__check-out{
       color: $accent-color;
@@ -1111,6 +1152,7 @@ ul.slick-dots{
   width: 100%;
   background: linear-gradient(32.62deg, #AD3339 0%, #FC323C 100%), #D6F4FD;
   transition: all .5s;
+  z-index: 999;
   &__inner{
     margin: 0 auto;
     text-align: center;
@@ -1180,19 +1222,19 @@ ul.slick-dots{
     text-align: center;
     margin-bottom: 50px;
   }
-  &__menu-list{
-    position: relative;
-    padding-right: 15px;
-    &::after{
-      position: absolute;
-      content: "";
-      top: 10px;
-      right: -10px;
-      background-image: url("../images/products/arrow.svg");
-      width: 14px;
-      height: 8px;
-    }
-  }
+  // &__menu-list{
+  //   position: relative;
+  //   padding-right: 15px;
+  //   &::after{
+  //     position: absolute;
+  //     content: "";
+  //     top: 10px;
+  //     right: -10px;
+  //     background-image: url("../images/products/arrow.svg");
+  //     width: 14px;
+  //     height: 8px;
+  //   }
+  // }
   &__about-main{
     &::after{
       right: 35px;
@@ -1261,6 +1303,58 @@ ul.slick-dots{
     }
   }
 }
+
+.footer-mobile{
+  &__menu-select{
+    display: block;
+    height: 20px;
+    overflow: hidden;
+    width: 300px;
+    margin: 0 auto;
+    transition: all .5s;
+    cursor: pointer;
+    margin-bottom: 20px;
+    &.footer-mobile__menu-select--active{
+      overflow:visible;
+      height: 150px;
+    }
+  }
+  &__menu-title{
+    position: relative;
+    margin-bottom: 10px;
+    &::after{
+      position: absolute;
+      content: "";
+      top: 10px;
+      right: 80px;
+      background-image: url("../images/products/arrow.svg");
+      width: 14px;
+      height: 8px;
+    }
+  }
+  &__about-select{
+    display: block;
+    height: 20px;
+    overflow: hidden;
+    width: 300px;
+    margin: 0 auto;
+    transition: all .5s;
+    cursor: pointer;
+    margin-bottom: 30px;
+    &.footer-mobile__menu-select--active{
+      overflow:visible;
+      height: 150px;
+    }
+  }
+  &__menu-item{
+    margin-bottom: 20px;
+  }
+  &__menu-link{
+    color: $title-color;
+  }
+}
+
+
 
 
 
